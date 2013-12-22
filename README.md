@@ -29,7 +29,7 @@ Sample configuration with '1x', '2x' sprite sheets:
 }
 ```
 
-The task then automatically gathers multiple versions of the same sprite based on the return value of the `spriteName` function. Here is what the generated SCSS file then looks like:
+The task automatically gathers multiple versions of the same sprite based on the return value of the `spriteName` function. Here is what the generated SCSS file then looks like:
 
 ``` SCSS
 $sprite-first: "1x" 416px 0px 200px 200px 1100px 925px, "2x" 816px 0px 400px 400px 2160px 1810px;
