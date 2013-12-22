@@ -1,0 +1,17 @@
+{
+  "name": "grunt-fancy-sprites",
+  "version": "0.9.1",
+  "description": "A very flexible minimalistic spriting solution for web development",
+  "author": "Josef Brandl",
+  "license": "MIT",
+  "repository": "https://github.com/MajorBreakfast/grunt-fancy-sprites.git",
+  "homepage": "https://github.com/MajorBreakfast/grunt-fancy-sprites",
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "spritesmith": "~0.17.1",
+    "rsvp": "~2.0.4"
+  }
+}
