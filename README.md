@@ -44,3 +44,4 @@ Files:
 - `second.png`
 
 See [fancy-sprites-scss](https://github.com/MajorBreakfast/fancy-sprites-scss) for a SCSS Mixin that consumes this output.
+What to provide a LESS or Stylus mixin? Send me the code for a mixin with similiar functionality and I'll implement the code that generates the sprites input like in the SCSS file above.
