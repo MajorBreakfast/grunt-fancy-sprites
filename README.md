@@ -41,4 +41,4 @@ Files:
 - `first@2x.png`
 - `second.png`
 
-See fancy-sprites-styles for a SCSS Mixin that consumes this output.
+See [fancy-sprites-scss](https://github.com/MajorBreakfast/fancy-sprites-scss) for a SCSS Mixin that consumes this output.
