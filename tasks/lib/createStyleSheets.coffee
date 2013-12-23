@@ -22,30 +22,21 @@ module.exports = (grunt) ->
     variables = ''
     
     # List with all variables (("sprite" var)("sprite2" var)...)
-    variable = '$sprites: '
+    variable = '$sprites:'
 
-    firstSprite = true
     _.forOwn sprites, (info, name) -> # Per sprite
-      variables += "\n" unless firstSprite
-      variables += "$sprite-#{name}: "
+      variables += "$sprite-#{name}: \"#{name}\""
 
-      firstSpriteSheet = true
       _.forOwn info, (info, sheet) -> # Per appearance of a sprite in a sheet
-        variables += ", " unless firstSpriteSheet
-        variables += "\"#{sheet}\" #{info.x}px #{info.y}px "
+        variables += ", \"#{sheet}\" #{info.x}px #{info.y}px "
         variables += "#{info.width}px #{info.height}px "
         variables += "#{info.spriteSheetWidth}px #{info.spriteSheetHeight}px"
-        firstSpriteSheet = false
         return
 
-      variables += ";"
-
-      variable += ", " unless firstSprite
-      variable += "\"#{name}\" $sprite-#{name}"
-
-      firstSprite = false
+      variables += ";\n"
+      variable += " $sprite-#{name}"
       return
 
-    variables + '\n\n' + variable + ';'
+    variables + '\n' + variable + ';'
 
   return createStyleSheets

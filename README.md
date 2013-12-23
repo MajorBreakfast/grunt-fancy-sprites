@@ -3,7 +3,7 @@ Fancy sprites is a very minimalistic spriting solution for your web projects bas
 
 It gives you the flexibility to provide sprite sheets in multiple resolutions.
 
-[Tutorial for Fancy Sprites on YouTube](http://youtu.be/xD8DW6IQ6r0)
+[Tutorial for Fancy Sprites on YouTube](http://youtu.be/xD8DW6IQ6r0) (Note: The SCSS has changed slightly since)
 
 Installation: `npm install --save grunt-fancy-sprites`
 
@@ -34,10 +34,10 @@ Sample configuration with '1x', '2x' sprite sheets:
 The task automatically gathers multiple versions of the same sprite based on the return value of the `spriteName` function. Here is what the generated SCSS file then looks like:
 
 ``` SCSS
-$sprite-first: "1x" 416px 0px 200px 200px 1100px 925px, "2x" 816px 0px 400px 400px 2160px 1810px;
-$sprite-second: "1x" 0px 416px 200px 200px 1100px 925px;
+$sprite-first: "first", "1x" 416px 0px 200px 200px 1100px 925px, "2x" 816px 0px 400px 400px 2160px 1810px;
+$sprite-second: "second", "1x" 0px 416px 200px 200px 1100px 925px;
 
-$sprites: "first" $sprite-first, "second" $sprite-second;
+$sprites: $sprite-first $sprite-second;
 ```
 
 Files:
