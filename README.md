@@ -3,7 +3,9 @@ Fancy sprites is a very minimalistic spriting solution for your web projects bas
 
 It gives you the flexibility to provide sprite sheets in multiple resolutions.
 
-`npm install --save grunt-fancy-sprites`
+[Tutorial for Fancy Sprites on YouTube](http://youtu.be/xD8DW6IQ6r0)
+
+Installation: `npm install --save grunt-fancy-sprites`
 
 Sample configuration with '1x', '2x' sprite sheets:
 ``` JavaScript
